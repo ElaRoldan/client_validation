@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="stylesheet" href="normalize.css">
+
+  <!-- Esto especifica que podamos utilizar acentos dentro del HTML  -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <!-- Esto especifica que podamos utilizar acentos dentro del HTML  -->
+  <link rel="stylesheet" href="main.css">
+
+  <!-- De esta forma se hace referencia a la librería de JQeury a través de un CDN  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <title>Navegación</title>
+</head>
+
+<body>
+
+    <div id="form">
+      <h2>Validaciones En El Cliente <h2>
+      <form id = "target" name="sign_up">
+        <layout> Email</layout>
+        <input id = "email_id" type="text" name="email" placeholder="Email">
+        <layout >Password</layout>
+        <input id = "password_id" type="password" name="password" placeholder="Password">
+        <input type="submit" name="registro" value="SignUp!">
+      </form>
+    </div>
+    <div id="error">
+     <strong><p id="display_error"></strong></p>
+     <strong><p id="display_psw_error"></strong></p>
+     <strong><p id="display_caps_error"></strong></p> 
+     <strong><p id="display_num_error"></strong></p> 
+     
+    </div>  
+    <!-- Aquí va tu javascript -->
+    <script type="text/javascript" src="valid.js"></script> 
+</body>
+</html>
